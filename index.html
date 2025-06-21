@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jennie-news</title>
+  <script src="https://kit.fontawesome.com/e516f97f7f.js" crossorigin="anonymous"></script>
+  <style>
+    html,
+    body {
+      /* font-family: "sweet-sans-pro", "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, "Roboto", "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif !important;*/
+      font-family: "sweet-sans-pro";
+      position: relative;
+      height: 100%;
+      width: 100%;
+      background-color: #fff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    ul,
+    li {
+      list-style: none;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    header {
+      position: absolute;
+      height: 185px;
+    }
+
+    header ul {
+      position: absolute;
+      top: 30px;
+      left: 1750px;
+      text-align: right;
+      z-index: 3;
+    }
+
+    header li a {
+      color: #333;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      line-height: 1.4;
+    }
+
+    header li.on a {
+      border-bottom: 2px solid #333;
+    }
+
+    .banner {
+      width: 100%;
+      height: 830px;
+      background: url(img/뉴스-메인-배너-pc-2.jpg) center/cover no-repeat;
+      position: relative;
+    }
+
+    .banner h1 {
+      font-size: 40px;
+      color: #fff;
+      position: absolute;
+      bottom: 130px;
+      left: 30%;
+    }
+
+    .banner button {
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      background-color: #000;
+      position: absolute;
+      bottom: 50px;
+      left: 46%;
+      width: 150px;
+      height: 50px;
+      border: none;
+      cursor: pointer;
+    }
+
+    .banner button:hover {
+      color: #000;
+      background-color: #fff;
+    }
+
+    section {
+      width: 1140px;
+      height: auto;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 100px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    /* section .part{
+    width: 560px;
+    height: 430px;
+    margin-right: 10px;
+    padding-top: 30px;
+    text-align: center;
+   } */
+    section .part {
+      width: 560px;
+      height: 430px;
+      margin-right: 10px;
+      padding-top: 30px;
+      text-align: center;
+      display: none;
+      /* 추가: 처음에는 안 보이게 */
+    }
+
+    section .part video,
+    section .part img {
+      width: 550px;
+      height: 306px;
+    }
+
+    section .part h1 {
+      padding: 10px 0;
+    }
+
+    section .part h1 a {
+      font-size: 20px;
+      color: #333;
+    }
+
+    section .part p a {
+      font-size: 12px;
+      color: #333;
+    }
+
+
+
+    footer {
+     width: 100%;
+      height: 200px;
+      position: relative;
+    }
+
+    footer button {
+      position: absolute;
+      width: 150px;
+      margin-left: 45%;
+      height: 50px;
+      top: 10%;
+      color: #fff;
+      background-color: #000;
+      font-size: 16px;
+      font-weight: 600;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer button:hover {
+      color: #000;
+      background-color: #fff;
+      border: 1px solid #000;
+    }
+
+    footer span {
+      width: 50%;
+      position: absolute;
+      margin-left:35%;
+      bottom: 20px;
+      color: #555;
+      font-size: 14px;
+    }
+    @media screen and (max-width:1200px) {
+      section{
+        width: 95%;
+      }
+      section .part{
+        width: 48%;
+        margin-right: 1%;
+        margin-left: 1%;
+      }
+      section .part img,
+      section .part video{
+        width: 100%;
+      }
+    }
+    @media screen and (max-width:768px) {
+      section {
+        display: block;
+      }
+      section .part{
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      footer button{
+        margin-left: 35%;
+      }
+      footer span {
+        width: 60%;
+        margin-left: 20%;text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner">
+    <h1>JENNIE - THE 1ST STUDIO ALBUM 'RUBY'</h1>
+    <button>VIEW MORE</button>
+  </div>
+
+  <header>
+    <h1 class="logo"><img src="" alt=""></h1>
+    <ul class="menuList">
+      <li><a href="../oddatelier/index.html">ODDATELIER</a></li>
+      <li><a href="../artist/index.html">ARTIST</a></li>
+      <li class="on"><a href="../notict/index.html">NOTICT</a></li>
+      <li><a href="../news/index.html">NEWS</a></li>
+    </ul>
+  </header>
+
+  <section>
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-seoul-city/">
+        <img src="./img/04-2048x1368.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-seoul-city/">
+          JENNIE – 'SEOUL CITY'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-seoul-city/" rel="tag">APRIL 2025</a></p>
+    </div><!--1-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-coachella-2025/"><img
+          src="./img/KakaoTalk_Photo_2025-04-28-15-48-52-2048x1366.jpeg"></a>
+      <h1><a href="https://oddatelier.net/jennie-coachella-2025/">
+          JENNIE – COACHELLA 2025
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-coachella-2025/" rel="tag">APRIL 2025</a></p>
+    </div><!--2-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-handlebars-feat-dua-lipa/"><img
+          src="./img/JENNIE-and-Dua-Lipa-Handlebars-screenshot-2025-billboard-1548.jpg.webp"></a>
+      <h1><a href="https://oddatelier.net/jennie-handlebars-feat-dua-lipa//">
+          JENNIE – 'HANDLEBARS'(FEAT.DUA LIPA)
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-handlebars-feat-dua-lipa/" rel="tag">MARCH 2025</a></p>
+    </div><!--3-->
+
+    <div class="part">
+      <video class="rsfv-video" id="rsfv-video-5200"
+        src="https://oddatelier.net/wp-content/uploads/2025/03/250228_LJ_v.4.5_Preview-1.mp4"
+        style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video>
+      <h1><a href="https://oddatelier.net/jennie-like-jennie/">JENNIE – ‘Like JENNIE’&nbsp;</a></h1>
+      <p><a href="https://oddatelier.net/tag/march-2025/" rel="tag">MARCH 2025</a></p>
+    </div><!--4-->
+
+    <div class="part">
+      <video class="rsfv-video" id="rsfv-video-5185"
+        src="https://oddatelier.net/wp-content/uploads/2025/02/@@final_XL-Color-Round-2_Texted_MP4_1_1.mp4"
+        style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video>
+      <h1><a href="https://oddatelier.net/jennie-new-single-extral-feat-doechii/">JENNIE – NEW SINGLE
+          ‘extraL’&nbsp;<br>(Feat.Doechii)</a></h1>
+      <p><a href="https://oddatelier.net/tag/february-2025/" rel="tag">February 2025</a></p>
+    </div><!--5-->
+
+    <div class="part">
+      <video class="rsfv-video" id="rsfv-video-5166"
+        src="https://oddatelier.net/wp-content/uploads/2025/02/KakaoTalk_Video_2025-02-01-12-34-50.mov"
+        style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video>
+      <h1><a href="https://oddatelier.net/jennie-new-single-love-hangover/">JENNIE – NEW SINGLE ‘LOVE
+          HANGOVER’&nbsp;<br>(Feat.Dominic Fike)</a></h1>
+      <p><a href="https://oddatelier.net/tag/january-2025/" rel="tag">January 2025</a></p>
+    </div><!--6-->
+
+    <div class="part">
+      <video class="rsfv-video" id="rsfv-video-5157"
+        src="https://oddatelier.net/wp-content/uploads/2025/02/KakaoTalk_Video_2025-02-01-12-59-12.mp4"
+        style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video>
+      <h1><a href="https://oddatelier.net/jennie-new-single-zen/">JENNIE – NEW SINGLE ‘ZEN’</a></h1>
+      <p><a href="https://oddatelier.net/tag/january-2025/" rel="tag">January 2025</a></p>
+    </div><!--7-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-the-1st-studio-album-trailer/">
+        <img src="img/jennie-ruby-img.jpg" alt="jennie-ruby-img"></a>
+      <h1><a href="https://oddatelier.net/jennie-the-1st-studio-album-trailer/">JENNIE – THE 1ST STUDIO ALBUM
+          TRAILER</a></h1>
+      <p><a href="https://oddatelier.net/tag/january-2025/" rel="tag">January 2025</a></p>
+    </div><!--8-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-billboard-issue/">
+        <img src="img/janissue.jpg" alt="jennie-janissue-img"></a>
+      <h1><a href="https://oddatelier.net/jennie-billboard-issue/">JENNIE – BILLBOARD JAN ISSUE</a></h1>
+      <p><a href="https://oddatelier.net/tag/january2025/" rel="tag">january2025</a></p>
+    </div><!--9-->
+
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-forchanel-coco-crush-2/">
+        <img width="1144" height="747" src="https://oddatelier.net/wp-content/uploads/2025/01/xXZ.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-forchanel-coco-crush-2/">JENNIE – NEW CAMPAIGN FOR‘CHANEL
+          COCO CRUSH’</a></h1>
+      <p><a href="https://oddatelier.net/tag/january-2025/" rel="tag">January 2025</a></p>
+    </div><!--10-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-w-korea-nov-issue/">
+        <img width="1920" height="1080" src="https://oddatelier.net/wp-content/uploads/2024/11/뉴스-메인-배너-pc.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-w-korea-nov-issue/">JENNIE – W KOREA NOV ISSUE</a></h1>
+      <p><a href="https://oddatelier.net/tag/october-2024/" rel="tag">OCTOBER 2024</a></p>
+    </div><!--11-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-single-mantra/">
+        <video src="https://oddatelier.net/wp-content/uploads/2024/10/jaemin.mp4" style="max-width:100%;display:block;"
+          autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/jennie-new-single-mantra/">JENNIE – NEW SINGLE ‘Mantra’</a></h1>
+      <p><a href="https://oddatelier.net/tag/october-2024/" rel="tag">OCTOBER 2024</a></p>
+    </div><!--12-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-bazaar-usa-oct-issue/">
+        <img width="1920" height="1080" src="https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-2.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-bazaar-usa-oct-issue/">JENNIE – BAZAAR USA OCT ISSUE</a></h1>
+      <p><a href="https://oddatelier.net/tag/september-2024/" rel="tag">SEPTEMBER 2024</a></p>
+    </div><!--13-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-signs-to-columbia-records/">
+        <img width="1920" height="1080" src="https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-1.jpg"
+          class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" decoding="async"
+          srcset="https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-1.jpg 1920w, https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-1-300x169.jpg 300w, https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-1-1024x576.jpg 1024w, https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-1-768x432.jpg 768w, https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc-1-1536x864.jpg 1536w"
+          sizes="(max-width: 1920px) 100vw, 1920px"></a>
+      <h1><a href="https://oddatelier.net/jennie-signs-to-columbia-records/">JENNIE SIGNS TO <br> COLUMBIA RECORDS</a>
+      </h1>
+      <p><a href="https://oddatelier.net/tag/september-2024/" rel="tag">SEPTEMBER 2024</a></p>
+    </div><!--14-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-forhera/"><img
+          src="https://oddatelier.net/wp-content/uploads/2024/09/뉴스-메인-배너-pc.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-forhera/">
+          JENNIE – NEW CAMPAIGN'HERA'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-forhera/" rel="tag">SEPTEMBER 2024</a></p>
+    </div><!--15-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-for-beats-solo-buds/">
+        <video class="rsfv-video" id="rsfv-video-4065"
+          src="https://oddatelier.net/wp-content/uploads/2024/06/BBDD2301820_-30_463_JENNIE_16-9_USEN.mp4"
+          style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-for-beats-solo-buds/">
+          JENNIE – NEW CAMPAIGN FOR'BEATS SOLO BUDS'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-for-beats-solo-buds/" rel="tag">JUNE 2024</a></p>
+    </div><!--16-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-makes-runway-debutwith-jacquemus-la-casa-show/">
+        <img src="./img/뉴스-메인-배너-pc-2.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-makes-runway-debutwith-jacquemus-la-casa-show/">
+          JENNIE MAKES RUNWAY DEBUT WITH JACQUEMUS LA CASA SHOW
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-makes-runway-debutwith-jacquemus-la-casa-show/" rel="tag">JUNE 2024</a>
+      </p>
+    </div><!--17-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-hit-me-hard-and-soft-experiencewith-billie-eilish/"><img
+          src="./img/뉴스-메인-배너-pc-3.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-hit-me-hard-and-soft-experiencewith-billie-eilish/">
+          JENNIE -'HIT ME HARD AND SOFT' EXPERIENCE WITH BILLIE EILISH
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-hit-me-hard-and-soft-experiencewith-billie-eilish/" rel="tag">JUNE
+          2024</a></p>
+    </div><!--18-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/%e3%85%93/"><img src="./img/OFF_FOOT_02_0128-16x9-1-2048x1152.jpg"></a>
+      <h1><a href="https://oddatelier.net/%e3%85%93/">
+          JENNIE - NEW CAMPAIGN FOR 'ADIDAS ORIGINALS'
+        </a></h1>
+      <p><a href="https://oddatelier.net/%e3%85%93/" rel="tag">JUNE 2024</a></p>
+    </div><!--19-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-met-gala-2024/"><img src="./img/dd.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-met-gala-2024/">
+          JENNIE - MET GALA 2024
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-met-gala-2024/" rel="tag">MAY 2024</a></p>
+    </div><!--20-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/spot-in-collaborationwith-zico/"><img src="./img/22.jpg"></a>
+      <h1><a href="https://oddatelier.net/spot-in-collaborationwith-zico/">
+          "SPOT!"IN COLLABORATION WITH ZICO
+        </a></h1>
+      <p><a href="https://oddatelier.net/spot-in-collaborationwith-zico/" rel="tag">APRIL 2024</a></p>
+    </div><!--21-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-x-gentlemonster-jentle-salon/"><img src="./img/jjgf.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-x-gentlemonster-jentle-salon/">
+          JENNIE X GENTIEMONSTER 'JENNIE SALON'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-x-gentlemonster-jentle-salon/" rel="tag">APRIL 2024</a></p>
+    </div><!--22-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-vogue-korea-may-issue/"><img src="./img/vogue.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-vogue-korea-may-issue/">
+          JENNIE - VOGUE KOREA MAY ISSUE
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-vogue-korea-may-issue/" rel="tag">APRIL 2024</a></p>
+    </div><!--23-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-for-maison-kitsune/"><img
+          src="./img/KakaoTalk_20240425_162912465_02-1-2048x1418.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-for-maison-kitsune/">
+          JENNIE - NEW CAMPAIGN FOR 'MAISON KITSUNE'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-for-maison-kitsune/" rel="tag">APRIL 2024</a></p>
+    </div><!--24-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-forcalvin-klein/"><video class="rsfv-video"
+          id="rsfv-video-3865" src="https://oddatelier.net/wp-content/uploads/2024/04/CK_VIDEO01.mp4"
+          style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-forcalvin-klein/">
+          JENNIE - NEW CAMPAIGN FOR 'CALVIN KLEIN'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-forcalvin-klein/" rel="tag">APRIL 2024</a></p>
+    </div><!--25-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-chanel-fw-2024-25-rtw-fashion-show/"><img src="./img/rtw_.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-chanel-fw-2024-25-rtw-fashion-show/">
+          JENNIE - 'CHANEL'FW 2024/25 RTW FASHION SHOW
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-chanel-fw-2024-25-rtw-fashion-show/" rel="tag">MARCH 2024</a></p>
+    </div><!--26-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/slow-motion-in-collaboration-with-matt-champion/"><img
+          src="./img/matt_web00.jpg"></a>
+      <h1><a href="https://oddatelier.net/slow-motion-in-collaboration-with-matt-champion/">
+          "SLOW MOTION"IN COLLABORATION WITH MATT CHAMPION
+        </a></h1>
+      <p><a href="https://oddatelier.net/slow-motion-in-collaboration-with-matt-champion/" rel="tag">MARCH 2024</a></p>
+    </div><!--27-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-forcoco-crush/">
+       <video class="rsfv-video" id="rsfv-video-3716"
+            src="https://oddatelier.net/wp-content/uploads/2024/03/PREMIERE_2024_MASTER_JENNIE_CT_15sec_01_16x9_VA_20240110.mp4"
+            style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video>
+      </a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-forcoco-crush/">
+          JENNIE - NEW CAMPAIGN FOR 'CHANEL PREMIÈRE'<!--Alt+0200 = È-->
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-forcoco-crush/" rel="tag">MARCH 2024</a></p>
+    </div><!--28-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/new-campaign-for-calvin-klein/"><video class="rsfv-video" id="rsfv-video-3678" src="https://oddatelier.net/wp-content/uploads/2024/02/KakaoTalk_20240229_104751409.mp4" style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/new-campaign-for-calvin-klein/">
+          JENNIE - NEW CAMPAIGN FOR 'CALVIN KLEIN'
+        </a></h1>
+      <p><a href="https://oddatelier.net/new-campaign-for-calvin-klein/" rel="tag">FEBUARY 2024</a></p>
+    </div><!--29-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-new-campaign-forchanel-coco-crush/"><video class="rsfv-video" id="rsfv-video-3592" src="https://oddatelier.net/wp-content/uploads/2024/01/OA_NL_COCOCRUSH-1.mp4" style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-forchanel-coco-crush/">
+          JENNIE - NEW CAMPAIGN FOR 'CHANEL COCO CRUSH'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-forchanel-coco-crush/" rel="tag">JANUARY 2024</a></p>
+    </div><!--30-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-power-dresser-in-2023-2/"><img  src="./img/NEWS_LIST_POWERDRESSER.jpg" ></a>
+      <h1><a href="https://oddatelier.net/jennie-power-dresser-in-2023-2/">
+          JENNIE - POWER DRESSER IN 2023
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-power-dresser-in-2023-2/" rel="tag">DECEMBER 2023</a></p>
+    </div><!--31-->
+
+    <div class="part">
+      <a href="https://oddatelier.net/jennie-special-single-you-me-released/"><img src="./img/ND_YOUANDME_01.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-special-single-you-me-released/">
+          JENNIE - SPECIAL SINGLE 'YOU & ME'RELEASED
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-special-single-you-me-released/" rel="tag">OCTOBER 2023</a></p>
+    </div><!--32-->
+
+    <div class="part">
+     <a href="https://oddatelier.net/jennie-new-campaign-for-tamburins/"><video class="rsfv-video" id="rsfv-video-2788" src="https://oddatelier.net/wp-content/uploads/2023/12/TAMBURINS_02.mp4" style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-for-tamburins/">
+          JENNIE - NEW CAMPAIGN FOR 'TAMBURINS'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-for-tamburins/" rel="tag">NOVEMBER 2023</a></p>
+    </div><!--33-->
+
+    <div class="part">
+     <a href="https://oddatelier.net/jennie-chanel-x-w-korea-nov-issue/"><img src="./img/Artboard-17.jpg"></a>
+      <h1><a href="https://oddatelier.net/jennie-chanel-x-w-korea-nov-issue/">
+          JENNIE - CHANEL X W KOREA, NOV ISSUE
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-chanel-x-w-korea-nov-issue/" rel="tag">NOVEMBER 2023</a></p>
+    </div><!--34-->
+
+    <div class="part">
+     <a href="https://oddatelier.net/jennie-new-campaign-for-hera/"><video class="rsfv-video" id="rsfv-video-2767" src="https://oddatelier.net/wp-content/uploads/2023/12/OA_NEWS_HERA.mp4" style="max-width:100%;display:block;" autoplay="" playsinline="" loop="" muted=""></video></a>
+      <h1><a href="https://oddatelier.net/jennie-new-campaign-for-hera/">
+          JENNIE - NEW CAMPAIGN FOR 'HERA'
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-new-campaign-for-hera/" rel="tag">OCTOBER 2023</a></p>
+    </div><!--35-->
+
+    <div class="part">
+     <a href="https://oddatelier.net/jennie-jacquemus-x-bazzar-korea-oct-issue/"><img  src="./img/NEWS_LIST_BAZAAR-1.jpg" ></a>
+      <h1><a href="https://oddatelier.net/jennie-jacquemus-x-bazzar-korea-oct-issue/">
+          JENNIE - JACQUEMUS X BAZAAR KOREA,OCT ISSUE
+        </a></h1>
+      <p><a href="https://oddatelier.net/jennie-jacquemus-x-bazzar-korea-oct-issue/" rel="tag">OCTOBER 2023</a></p>
+    </div><!--36-->
+
+
+  </section>
+
+
+  <footer>
+    <button>LOAD MORE</button>
+    <span>© ODDATELIER. ALL RIGHTS RESERVED. ALL OF ODDATELIER’S CONTENT IS COPYRIGHTED</span>
+  </footer>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const parts = document.querySelectorAll(".part");
+      const loadMoreBtn = document.querySelector("footer button");
+      let visibleCount = 6;
+
+      // 초기 상태: 6개만 보이기
+      parts.forEach((part, index) => {
+        part.style.display = index < visibleCount ? "block" : "none";
+      });
+
+      loadMoreBtn.addEventListener("click", function () {
+        const nextVisible = visibleCount + 6;
+
+        parts.forEach((part, index) => {
+          if (index >= visibleCount && index < nextVisible) {
+            part.style.display = "block";
+          }
+        });
+
+        visibleCount = nextVisible;
+
+        // 더 이상 보일 게 없으면 버튼 숨기기
+        if (visibleCount >= parts.length) {
+          loadMoreBtn.style.display = "none";
+        }
+      });
+    });
+  </script>
+
+
+</body>
+
+</html>
