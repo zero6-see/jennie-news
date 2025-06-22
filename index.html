@@ -33,29 +33,45 @@
     }
 
     header {
-      position: absolute;
-      height: 185px;
-    }
+    width: 100%;
+    height: 200px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+  }
 
-    header ul {
-      position: absolute;
-      top: 30px;
-      right: 0;
-      text-align: right;
-      z-index: 3;
-    }
+  header .logo {
+    width: 15%;
+    height: 100%;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
 
-    header li a {
-      color: #333;
-      font-size: 20px;
-      font-weight: 600;
-      letter-spacing: 2px;
-      line-height: 1.4;
-    }
+  header .logo img {
+    width: 40%;
+    height: 40%;
+  }
 
-    header li.on a {
-      border-bottom: 2px solid #333;
-    }
+  header  .menuList {
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 20px;
+    align-content: right;
+  }
+
+  header  .menuList li a {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #333;
+  }
+
+  header  .menuList li.on a {
+    border-bottom: 2px solid #333;
+  }
 
     .banner {
       width: 100%;
@@ -224,7 +240,7 @@
   </div>
 
   <header>
-    <h1 class="logo"><img src="./img/cropped-cropped-OPEN-GRAPH_WHITE.png" alt="logo"></h1>
+    <h1 class="logo"><img src="../img/oa_bk.png" alt="logo"></h1>
     <ul class="menuList">
       <li><a href="https://jennie-oddatelier.netlify.app">ODDATELIER</a></li>
       <li><a href="https://jennie-artist.netlify.app">ARTIST</a></li>
